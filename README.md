@@ -1,0 +1,1 @@
+# Installable eslint config for es6
