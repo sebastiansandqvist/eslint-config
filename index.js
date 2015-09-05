@@ -225,7 +225,7 @@ module.exports = {
 		// enforce spacing inside array brackets
     "array-bracket-spacing": [0, "never"], // meh
     // enforce one true brace style
-    "brace-style": [2, "stroustrup", {"allowSingleLine", true}],
+    "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
     // require camel case names
     "camelcase": 2,
     // enforce spacing before and after comma
