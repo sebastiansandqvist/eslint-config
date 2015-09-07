@@ -185,7 +185,7 @@ module.exports = {
     // disallow use of void operator
     "no-void": 2,
     // disallow usage of configurable warning terms in comments: e.g. todo
-    "no-warning-comments": [2, { "terms": ["todo", "fix", "test"], "location": "start" }],
+    "no-warning-comments": [1, { "terms": ["todo", "fix", "test"], "location": "start" }],
     // disallow use of the with statement
     "no-with": 2,
     // require use of the second argument for parseInt()
@@ -344,7 +344,7 @@ module.exports = {
     // disallow to use this/super before super() calling in constructors.
     "no-this-before-super": 2,
     // require let or const instead of var
-    "no-var": 2, // trying this out... might not keep
+    "no-var": 1, // trying this out... might not keep
     // require method and property shorthand syntax for object literals
     "object-shorthand": 0,
     // suggest using of const declaration for variables that are never modified after declared
