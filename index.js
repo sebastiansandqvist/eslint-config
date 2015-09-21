@@ -2,11 +2,6 @@
 
 // idea from https://github.com/ljharb/eslint-config/blob/master/index.js
 
-// ----- dependencies
-// ---------------------------------------
-var fs = require('fs');
-var path = require('path');
-
 // ----- exports
 // ---------------------------------------
 module.exports = {
@@ -16,7 +11,7 @@ module.exports = {
   	"defaultParams": true,
   	"forOf": true,
     "jsx": true,
-    "modules": false,
+    "modules": true,
     "templateStrings": true
   },
 

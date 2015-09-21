@@ -1,6 +1,6 @@
 {
   "name": "@seabass/eslint-config",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Eslint config for es6",
   "main": "index.js",
   "author": "sebastian sandqvist",
