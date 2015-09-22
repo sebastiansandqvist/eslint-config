@@ -7,20 +7,49 @@
 module.exports = {
 	
 	"ecmaFeatures": {
-  	"arrowFunctions": true,
-  	"defaultParams": true,
-  	"forOf": true,
-    "jsx": true,
-    "modules": true,
-    "templateStrings": true
-  },
+      	"arrowFunctions": true,
+        "classes": true,
+        "defaultParams": true,
+        "destructuring": true,
+      	"forOf": true,
+        "jsx": true,
+        "modules": true,
+        "spread": true,
+        "templateStrings": true
+      },
 
 	"env": {
 		"node": true,
 		"es6": true
 	},
 
+    "parser": "babel-eslint",
+
+    "plugins": ["react"],
+
 	"rules": {
+
+    // --------------------------------- REACT ---------------------------------
+
+    "react/display-name": 1,
+    "react/jsx-closing-bracket-location": [1, ["after-props"]],
+    "react/jsx-curly-spacing": [1, "never"],
+    "react/jsx-indent-props": [1, "tab"],
+    "react/jsx-no-duplicate-props": 1,
+    "react/jsx-no-undef": 1,
+    "react/jsx-sort-prop-types": 1,
+    "react/jsx-uses-react": 1,
+    "react/jsx-uses-vars": 1,
+    "react/no-danger": 1,
+    "react/no-did-mount-set-state": 1,
+    "react/no-did-update-set-state": 1,
+    "react/no-set-state": 0, // useful in flux
+    "react/no-unknown-property": 1,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 1,
+    "react/self-closing-comp": 1,
+    "react/sort-comp": 0,
+    "react/wrap-multilines": 1
 
   	// -------------------------- POSSIBLE ERRORS --------------------------
 
@@ -28,13 +57,13 @@ module.exports = {
     // disallow assignment in conditional expressions
     "no-cond-assign": 2,
     // disallow use of console
-    "no-console": 2,
+    "no-console": 1,
     // disallow use of constant expressions in conditions
     "no-constant-condition": 2,
     // disallow control characters in regular expressions
     "no-control-regex": 2,
     // disallow use of debugger
-    "no-debugger": 2,
+    "no-debugger": 1,
     // disallow duplicate arguments in functions
     "no-dupe-args": 2,
     // disallow duplicate keys when creating object literals
@@ -48,7 +77,7 @@ module.exports = {
     // disallow assigning to the exception in a catch block
     "no-ex-assign": 2,
     // disallow double-negation boolean casts in a boolean context
-    "no-extra-boolean-cast": 2,
+    "no-extra-boolean-cast": 1,
     // disallow unnecessary parentheses
     "no-extra-parens": 0,
     // disallow unnecessary semicolons
@@ -72,7 +101,7 @@ module.exports = {
     // disallow unreachable statements after a return, throw, continue, or break statement
     "no-unreachable": 2,
     // disallow comparisons with the value NaN
-    "use-isnan": 2,
+    "use-isnan": 1,
     // ensure JSDoc comments are valid
     "valid-jsdoc": 2,
     // ensure that the results of typeof are compared against a valid string
@@ -89,7 +118,7 @@ module.exports = {
     // specify the maximum cyclomatic complexity allowed in a program
     "complexity": [2, 10],
     // require return statements to either always or never specify values
-    "consistent-return": 2,
+    "consistent-return": 1,
     // specify curly brace conventions for all control statements
     "curly": [2, "all"],
     // require default case in switch statements
@@ -99,11 +128,11 @@ module.exports = {
     // enforces consistent newlines before or after dots
     "dot-location": 0,
     // require the use of === and !==
-    "eqeqeq": 2,
+    "eqeqeq": 1,
     // make sure for-in loops have an if statement
     "guard-for-in": 2,
     // disallow the use of alert, confirm, and prompt
-    "no-alert": 2,
+    "no-alert": 1,
     // disallow use of arguments.caller or arguments.callee
     "no-caller": 2,
     // disallow division operators explicitly at beginning of regular expression
@@ -125,7 +154,7 @@ module.exports = {
     // disallow the use of leading or trailing decimal points in numeric literals
     "no-floating-decimal": 2,
     // disallow the type conversions with shorter notations
-    "no-implicit-coercion": 2,
+    "no-implicit-coercion": 1,
     // disallow use of eval()-like methods
     "no-implied-eval": 2,
     // disallow this keywords outside of classes or class-like objects
@@ -137,7 +166,7 @@ module.exports = {
     // disallow unnecessary nested blocks
     "no-lone-blocks": 2,
     // disallow creation of functions within loops
-    "no-loop-func": 2,
+    "no-loop-func": 1,
     // disallow use of multiple spaces
     "no-multi-spaces": 2,
     // disallow use of multiline strings
@@ -203,7 +232,7 @@ module.exports = {
     // disallow use of new operator with the require function
     "no-new-require": 2,
     // disallow string concatenation with __dirname and __filename
-    "no-path-concat": 2,
+    "no-path-concat": 1,
     // disallow process.exit()
     "no-process-exit": 2,
     // restrict usage of specified node modules
@@ -219,12 +248,12 @@ module.exports = {
 
 		// enforce spacing inside array brackets
     "array-bracket-spacing": [0, "never"], // meh
-    // enforce one true brace style
-    "brace-style": [2, "stroustrup", {"allowSingleLine": true}],
+    // enforce brace style
+    "brace-style": [1, "stroustrup", {"allowSingleLine": true}],
     // require camel case names
-    "camelcase": 2,
+    "camelcase": 1,
     // enforce spacing before and after comma
-    "comma-spacing": 2,
+    "comma-spacing": 1,
     // enforce one true comma style
     "comma-style": [2, "last"],
     // require or disallow padding inside computed properties
@@ -262,7 +291,7 @@ module.exports = {
     // disallow comments inline after code
     "no-inline-comments": 0,
     // disallow if as the only statement in an else block
-    "no-lonely-if": 2,
+    "no-lonely-if": 1,
     // disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs": [2, false],
     // disallow multiple empty lines
@@ -284,7 +313,7 @@ module.exports = {
     // require or disallow padding inside curly braces
     "object-curly-spacing": [0, "never"], // opt
     // allow just one var statement per function
-    "one-var": [2, "never"],
+    "one-var": [1, "never"],
     // require assignment operator shorthand where possible or prohibit it entirely
     "operator-assignment": [0, "always"],
     // enforce operators to be placed before or after line breaks
@@ -300,7 +329,7 @@ module.exports = {
     // enforce spacing before and after semicolons
     "semi-spacing": [2, {"before": false, "after": true}],
     // require or disallow use of semicolons instead of ASI
-    "semi": [2, "always"],
+    "semi": [1, "always"],
     // sort variables within the same declaration block
     "sort-vars": 0,
     // require a space after certain keywords
@@ -318,7 +347,7 @@ module.exports = {
     // Require or disallow spaces before/after unary operators
     "space-unary-ops": [1, { "words": true, "nonwords": false }],
     // require or disallow a space immediately following the // or /* in a comment
-    "spaced-comment": [2, "always"],
+    "spaced-comment": [1, "always"],
     // require regex literals to be wrapped in parentheses
     "wrap-regex": 2,
 
@@ -373,13 +402,13 @@ module.exports = {
     // disallow declaration of variables already declared in the outer scope
     "no-shadow": 2,
     // disallow use of undefined when initializing variables
-    "no-undef-init": 2,
+    "no-undef-init": 1,
     // disallow use of undeclared variables unless mentioned in a /*global */ block
-    "no-undef": 2,
+    "no-undef": 1,
     // disallow use of undefined variable
     "no-undefined": 2,
     // disallow declaration of variables that are not used in the code
-    "no-unused-vars": [2, {"vars": "local", "args": "after-used"}],
+    "no-unused-vars": [1, {"vars": "local", "args": "after-used"}],
     // disallow use of variables before they are defined
     "no-use-before-define": 2
 
