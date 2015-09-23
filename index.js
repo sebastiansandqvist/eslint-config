@@ -19,8 +19,9 @@ module.exports = {
       },
 
 	"env": {
-		"node": true,
-		"es6": true
+        "browser": true,
+        "node": true,
+        "es6": true
 	},
 
     "parser": "babel-eslint",
@@ -31,8 +32,6 @@ module.exports = {
 
     // --------------------------------- REACT ---------------------------------
 
-    "react/display-name": 1,
-    "react/jsx-closing-bracket-location": [1, ["after-props"]],
     "react/jsx-curly-spacing": [1, "never"],
     "react/jsx-indent-props": [1, "tab"],
     "react/jsx-no-duplicate-props": 1,
@@ -385,7 +384,7 @@ module.exports = {
 		// -------------------------- LEGACY --------------------------
 
 		"max-depth": [2, 10],
-		"max-len": [2, 80, 2, {"ignoreComments": true, "ignoreUrls": true}],
+		"max-len": [2, 100, 2, {"ignoreComments": true, "ignoreUrls": true}],
 
 		// -------------------------- VARIABLES --------------------------
 
