@@ -49,7 +49,7 @@ module.exports = {
     "react/react-in-jsx-scope": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 0,
-    "react/wrap-multilines": 1
+    "react/wrap-multilines": 1,
 
   	// -------------------------- POSSIBLE ERRORS --------------------------
 
