@@ -406,7 +406,7 @@ module.exports = {
     // disallow use of undeclared variables unless mentioned in a /*global */ block
     "no-undef": 1,
     // disallow use of undefined variable
-    "no-undefined": 2,
+    "no-undefined": 1,
     // disallow declaration of variables that are not used in the code
     "no-unused-vars": [1, {"vars": "local", "args": "after-used"}],
     // disallow use of variables before they are defined
