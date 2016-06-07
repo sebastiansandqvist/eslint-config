@@ -224,9 +224,9 @@ module.exports = {
 		// -------------------------- NODE --------------------------
 
 		// enforce return after a callback
-    "callback-return": 2,
+    "callback-return": 1,
     // enforces error handling in callbacks (node environment)
-    "handle-callback-err": 2,
+    "handle-callback-err": 1,
     // disallow mixing regular variable and require declarations
     "no-mixed-requires": [2, false],
     // disallow use of new operator with the require function
@@ -271,17 +271,17 @@ module.exports = {
     // this option sets a specific tab width for your code
     "indent": [2, "tab"],
     // enforces spacing between keys and values in object literal properties
-    "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
+    "key-spacing": [1, { "beforeColon": false, "afterColon": true }],
     // enforces empty lines around comments
-    "lines-around-comment": [2, { "beforeBlockComment": true }],
+    "lines-around-comment": [1, { "beforeBlockComment": true }],
     // disallow mixed "LF" and "CRLF" as linebreaks
     "linebreak-style": [2, "unix"],
     // specify the maximum depth callbacks can be nested
-    "max-nested-callbacks": [2, 4],
+    "max-nested-callbacks": [1, 4],
     // require a capital letter for constructors
-    "new-cap": 2,
+    "new-cap": 1,
     // disallow the omission of parentheses when invoking a constructor with no arguments
-    "new-parens": 2,
+    "new-parens": 1,
     // allow/disallow an empty newline after var statement
     "newline-after-var": 0,
     // disallow use of the Array constructor
@@ -309,7 +309,7 @@ module.exports = {
     // disallow dangling underscores in identifiers
     "no-underscore-dangle": 0,
     // disallow the use of Boolean literals in conditional expressions
-    "no-unneeded-ternary": 2,
+    "no-unneeded-ternary": 1,
     // require or disallow padding inside curly braces
     "object-curly-spacing": [0, "never"], // opt
     // allow just one var statement per function
@@ -327,7 +327,7 @@ module.exports = {
     // require identifiers to match the provided regular expression
     "id-match": 0,
     // enforce spacing before and after semicolons
-    "semi-spacing": [2, {"before": false, "after": true}],
+    "semi-spacing": [1, {"before": false, "after": true}],
     // require or disallow use of semicolons instead of ASI
     "semi": [1, "always"],
     // sort variables within the same declaration block
@@ -339,17 +339,17 @@ module.exports = {
     // require or disallow space before function opening parenthesis
     "space-before-function-paren": [2, "never"],
     // require or disallow spaces inside parentheses
-    "space-in-parens": [2, "never"],
+    "space-in-parens": [1, "never"],
     // require spaces around operators
-    "space-infix-ops": [2, {"int32Hint": false}],
+    "space-infix-ops": [1, {"int32Hint": false}],
     // require a space after return, throw, and case
-    "space-return-throw-case": 2,
+    "space-return-throw-case": 1,
     // Require or disallow spaces before/after unary operators
     "space-unary-ops": [1, { "words": true, "nonwords": false }],
     // require or disallow a space immediately following the // or /* in a comment
     "spaced-comment": [1, "always"],
     // require regex literals to be wrapped in parentheses
-    "wrap-regex": 2,
+    "wrap-regex": 1,
 
 		// -------------------------- ES6 --------------------------
 
@@ -385,7 +385,7 @@ module.exports = {
 		// -------------------------- LEGACY --------------------------
 
 		"max-depth": [2, 10],
-		"max-len": [2, 100, 2, {"ignoreComments": true, "ignoreUrls": true}],
+		"max-len": [1, 140, 2, {"ignoreComments": true, "ignoreUrls": true}],
 
 		// -------------------------- VARIABLES --------------------------
 
@@ -406,7 +406,7 @@ module.exports = {
     // disallow use of undeclared variables unless mentioned in a /*global */ block
     "no-undef": 1,
     // disallow use of undefined variable
-    "no-undefined": 1,
+    "no-undefined": 0,
     // disallow declaration of variables that are not used in the code
     "no-unused-vars": [1, {"vars": "local", "args": "after-used"}],
     // disallow use of variables before they are defined
