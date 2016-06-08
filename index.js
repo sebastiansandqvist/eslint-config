@@ -311,7 +311,7 @@ module.exports = {
     // sort variables within the same declaration block
     "sort-vars": 0,
     // require a space after certain keywords
-    "keyword-spacing": [1, "always"],
+    "keyword-spacing": [1, {"before": true, "after": true}],
     // require or disallow space before blocks
     "space-before-blocks": [2, "always"],
     // require or disallow space before function opening parenthesis
