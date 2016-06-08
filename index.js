@@ -27,7 +27,7 @@ module.exports = {
 
     "parser": "babel-eslint",
 
-    "plugins": ["react"],
+    "plugins": ["react", "flowtype"],
 
 	"rules": {
 

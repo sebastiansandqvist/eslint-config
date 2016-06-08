@@ -6,6 +6,8 @@
   "author": "sebastian sandqvist",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "2.11.1",
+    "eslint-plugin-flowtype": "2.2.7",
     "eslint-plugin-react": "^3.4.2"
   }
 }
