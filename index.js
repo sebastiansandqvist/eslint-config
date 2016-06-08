@@ -118,7 +118,7 @@ module.exports = {
     // disallow else after a return in an if
     "no-else-return": 2,
     // disallow use of labels for anything other then loops and switches
-    "no-empty-label": 2,
+    "no-labels": 2,
     // disallow comparisons to null without a type-checking operator
     "no-eq-null": 2,
     // disallow use of eval()
@@ -311,7 +311,7 @@ module.exports = {
     // sort variables within the same declaration block
     "sort-vars": 0,
     // require a space after certain keywords
-    "space-after-keywords": [2, "always"],
+    "keyword-spacing": [1, "always"],
     // require or disallow space before blocks
     "space-before-blocks": [2, "always"],
     // require or disallow space before function opening parenthesis
@@ -320,8 +320,6 @@ module.exports = {
     "space-in-parens": [1, "never"],
     // require spaces around operators
     "space-infix-ops": [1, {"int32Hint": false}],
-    // require a space after return, throw, and case
-    "space-return-throw-case": 1,
     // Require or disallow spaces before/after unary operators
     "space-unary-ops": [1, { "words": true, "nonwords": false }],
     // require or disallow a space immediately following the // or /* in a comment
