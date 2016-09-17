@@ -1,7 +1,5 @@
 'use strict';
 
-// idea from https://github.com/ljharb/eslint-config/blob/master/index.js
-
 // ----- exports
 // ---------------------------------------
 module.exports = {
@@ -100,15 +98,15 @@ module.exports = {
     // specify curly brace conventions for all control statements
     "curly": [2, "all"],
     // require default case in switch statements
-    "default-case": 2,
+    "default-case": 1,
     // encourages use of dot notation whenever possible
-    "dot-notation": [2, { "allowKeywords": false }],
+    "dot-notation": [1, { "allowKeywords": false }],
     // enforces consistent newlines before or after dots
     "dot-location": 0,
     // require the use of === and !==
     "eqeqeq": 1,
     // make sure for-in loops have an if statement
-    "guard-for-in": 2,
+    "guard-for-in": 1,
     // disallow the use of alert, confirm, and prompt
     "no-alert": 1,
     // disallow use of arguments.caller or arguments.callee
@@ -116,11 +114,11 @@ module.exports = {
     // disallow division operators explicitly at beginning of regular expression
     "no-div-regex": 2,
     // disallow else after a return in an if
-    "no-else-return": 2,
+    "no-else-return": 1,
     // disallow use of labels for anything other then loops and switches
     "no-labels": 2,
     // disallow comparisons to null without a type-checking operator
-    "no-eq-null": 2,
+    "no-eq-null": 1,
     // disallow use of eval()
     "no-eval": 2,
     // disallow adding to native types
@@ -139,8 +137,6 @@ module.exports = {
     "no-invalid-this": 2,
     // disallow usage of __iterator__ property
     "no-iterator": 2,
-    // disallow use of labeled statements
-    "no-labels": 0,
     // disallow unnecessary nested blocks
     "no-lone-blocks": 2,
     // disallow creation of functions within loops
@@ -148,7 +144,7 @@ module.exports = {
     // disallow use of multiple spaces
     "no-multi-spaces": 2,
     // disallow use of multiline strings
-    "no-multi-str": 2,
+    "no-multi-str": 1,
     // disallow reassignments of native objects
     "no-native-reassign": 2,
     // disallow use of new operator when not part of the assignment or comparison
@@ -191,7 +187,7 @@ module.exports = {
     // disallow use of the with statement
     "no-with": 2,
     // require use of the second argument for parseInt()
-    "radix": 2,
+    "radix": 1,
     // requires to declare all vars on top of their containing scope
     "vars-on-top": 0, // disabled: nice to declare vars within loops
     // require immediate function invocation to be wrapped in parentheses
@@ -257,7 +253,7 @@ module.exports = {
     // specify the maximum depth callbacks can be nested
     "max-nested-callbacks": [1, 4],
     // require a capital letter for constructors
-    "new-cap": 1,
+    "new-cap": 0,
     // disallow the omission of parentheses when invoking a constructor with no arguments
     "new-parens": 1,
     // allow/disallow an empty newline after var statement
