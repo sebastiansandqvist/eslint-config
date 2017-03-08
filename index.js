@@ -57,7 +57,7 @@ module.exports = {
     // disallow unnecessary parentheses
     "no-extra-parens": 0,
     // disallow unnecessary semicolons
-    "no-extra-semi": 2,
+    "no-extra-semi": 1,
     // disallow overwriting functions written as function declarations
     "no-func-assign": 2,
     // disallow function or variable declarations in nested blocks
@@ -92,7 +92,7 @@ module.exports = {
     // treat var statements as if they were block scoped
     "block-scoped-var": 0,
     // specify the maximum cyclomatic complexity allowed in a program
-    "complexity": [2, 10],
+    "complexity": [1, 10],
     // require return statements to either always or never specify values
     "consistent-return": 1,
     // specify curly brace conventions for all control statements
@@ -100,7 +100,7 @@ module.exports = {
     // require default case in switch statements
     "default-case": 1,
     // encourages use of dot notation whenever possible
-    "dot-notation": [1, { "allowKeywords": false }],
+    "dot-notation": [1, { "allowKeywords": true }], // allows .catch in promises
     // enforces consistent newlines before or after dots
     "dot-location": 0,
     // require the use of === and !==
@@ -181,7 +181,7 @@ module.exports = {
     // disallow unnecessary .call() and .apply()
     "no-useless-call": 2,
     // disallow use of void operator
-    "no-void": 2,
+    "no-void": 0, // could be nice to conditionally return void somefunction() for consistent return rule
     // disallow usage of configurable warning terms in comments: e.g. todo
     "no-warning-comments": [1, { "terms": ["todo", "fix", "test"], "location": "start" }],
     // disallow use of the with statement
@@ -244,6 +244,7 @@ module.exports = {
     "id-length": 0,
     // this option sets a specific tab width for your code
     "indent": [2, "tab"],
+    // "indent": ["error", "tab", { "SwitchCase": 1 }],
     // enforces spacing between keys and values in object literal properties
     "key-spacing": [1, { "beforeColon": false, "afterColon": true }],
     // enforces empty lines around comments
@@ -269,7 +270,7 @@ module.exports = {
     // disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs": [2, false],
     // disallow multiple empty lines
-    "no-multiple-empty-lines": [2, {"max": 2}],
+    "no-multiple-empty-lines": [1, {"max": 3}],
     // disallow nested ternary expressions
     "no-nested-ternary": 2,
     // disallow use of the Object constructor
@@ -372,7 +373,7 @@ module.exports = {
     // disallow shadowing of names such as arguments
     "no-shadow-restricted-names": 2,
     // disallow declaration of variables already declared in the outer scope
-    "no-shadow": 2,
+    "no-shadow": 1,
     // disallow use of undefined when initializing variables
     "no-undef-init": 1,
     // disallow use of undeclared variables unless mentioned in a /*global */ block
@@ -382,7 +383,38 @@ module.exports = {
     // disallow declaration of variables that are not used in the code
     "no-unused-vars": [1, {"vars": "local", "args": "after-used"}],
     // disallow use of variables before they are defined
-    "no-use-before-define": 2
+    "no-use-before-define": 1,
+
+    // -------------------------- MANUAL CHANGES --------------------------
+
+    "no-prototype-builtins": 1,
+
+    "no-template-curly-in-string": 1,
+
+    "no-unsafe-finally": 1,
+
+    "no-unsafe-negation": 1,
+
+    "no-case-declarations": 1,
+
+    "no-empty-pattern": 2,
+
+    "no-extra-label": 2,
+
+    "no-global-assign": 2,
+
+    "no-param-reassign": 1,
+
+    "no-self-assign": 1,
+
+    "no-unused-labels": 1,
+
+    "no-useless-concat": 1,
+
+    "no-useless-escape": 1
+
+
+
 
   }
 
