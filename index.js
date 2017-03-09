@@ -389,11 +389,11 @@ module.exports = {
 
     "no-prototype-builtins": 1,
 
-    "no-template-curly-in-string": 1,
+    // "no-template-curly-in-string": 1,
 
     "no-unsafe-finally": 1,
 
-    "no-unsafe-negation": 1,
+    // "no-unsafe-negation": 1,
 
     "no-case-declarations": 1,
 
@@ -401,7 +401,7 @@ module.exports = {
 
     "no-extra-label": 2,
 
-    "no-global-assign": 2,
+    // "no-global-assign": 2,
 
     "no-param-reassign": 1,
 
