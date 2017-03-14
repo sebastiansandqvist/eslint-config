@@ -243,8 +243,8 @@ module.exports = {
     // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
     "id-length": 0,
     // this option sets a specific tab width for your code
-    "indent": [2, "tab"],
-    // "indent": ["error", "tab", { "SwitchCase": 1 }],
+    // "indent": [2, "tab"],
+    "indent": ["error", "tab", { "SwitchCase": 1 }],
     // enforces spacing between keys and values in object literal properties
     "key-spacing": [1, { "beforeColon": false, "afterColon": true }],
     // enforces empty lines around comments
@@ -351,7 +351,7 @@ module.exports = {
     // suggest using Reflect methods where applicable
     "prefer-reflect": 0,
     // Suggest using template literals instead of string concatenation.
-    "prefer-template": 1,
+    "prefer-template": 0,
     // disallow generator functions that do not have yield
     "require-yield": 0,
 
