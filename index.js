@@ -88,7 +88,7 @@ module.exports = {
 	// -------------------------- BEST PRACTICES --------------------------
 
     // Enforces getter/setter pairs in objects
-    "accessor-pairs": [2, { "getWithoutSet": true }],
+    "accessor-pairs": [2, { "getWithoutSet": false }],
     // treat var statements as if they were block scoped
     "block-scoped-var": 0,
     // specify the maximum cyclomatic complexity allowed in a program
