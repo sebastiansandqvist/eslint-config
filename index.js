@@ -16,7 +16,7 @@ module.exports = {
 
         // -------------------------- POSSIBLE ERRORS --------------------------
 
-        "comma-dangle": [2, "never"],
+        "comma-dangle": [2, "always-multiline"],
         // disallow assignment in conditional expressions
         "no-cond-assign": 2,
         // disallow use of console
@@ -83,7 +83,7 @@ module.exports = {
         // require return statements to either always or never specify values
         "consistent-return": [1, { "treatUndefinedAsUnspecified": true }],
         // specify curly brace conventions for all control statements
-        "curly": [2, "all"],
+        "curly": [2, "multi"],
         // require default case in switch statements
         "default-case": 1,
         // encourages use of dot notation whenever possible
@@ -195,7 +195,7 @@ module.exports = {
         // disallow string concatenation with __dirname and __filename
         "no-path-concat": 1,
         // disallow process.exit()
-        "no-process-exit": 2,
+        "no-process-exit": 0,
         // restrict usage of specified node modules
         "no-restricted-modules": 0,
         // disallow use of synchronous methods (off by default)
@@ -231,7 +231,7 @@ module.exports = {
         "id-length": 0,
         // this option sets a specific tab width for your code
         // "indent": [2, "tab"],
-        "indent": ["error", "tab", { "SwitchCase": 1 }],
+        "indent": ["error", 2, { "SwitchCase": 1 }],
         // enforces spacing between keys and values in object literal properties
         "key-spacing": [1, { "beforeColon": false, "afterColon": true }],
         // enforces empty lines around comments
