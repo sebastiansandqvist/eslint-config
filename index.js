@@ -83,7 +83,8 @@ module.exports = {
         // require return statements to either always or never specify values
         "consistent-return": [1, { "treatUndefinedAsUnspecified": true }],
         // specify curly brace conventions for all control statements
-        "curly": [2, "multi"],
+        // "curly": [1, "multi"],
+        "curly": 0,
         // require default case in switch statements
         "default-case": 1,
         // encourages use of dot notation whenever possible
