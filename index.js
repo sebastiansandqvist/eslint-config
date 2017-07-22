@@ -9,7 +9,7 @@ module.exports = {
     sourceType: "module"
   },
   "rules": {
-    "comma-dangle": ["error", "always-multiline"],
+    "comma-dangle": ["warn", "always-multiline"],
     // disallow assignment in conditional expressions
     "no-cond-assign": "error",
     // disallow use of console
@@ -202,7 +202,7 @@ module.exports = {
       // -------------------------- STYLISTIC ISSUES --------------------------
 
       // enforce spacing inside array brackets
-    "array-bracket-spacing": ["warn", "never"], // meh
+    "array-bracket-spacing": "off",
     // enforce brace style
     "brace-style": ["warn", "stroustrup", {"allowSingleLine": true}],
     // require camel case names
@@ -267,7 +267,7 @@ module.exports = {
     // disallow the use of Boolean literals in conditional expressions
     "no-unneeded-ternary": "warn",
     // require or disallow padding inside curly braces
-    "object-curly-spacing": ["warn", "never"], // opt
+    "object-curly-spacing": "off", // opt
     // allow just one var statement per function
     "one-var": ["warn", "never"],
     // require assignment operator shorthand where possible or prohibit it entirely
