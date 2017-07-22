@@ -216,7 +216,7 @@ module.exports = {
     // enforces consistent naming when capturing the current execution context
     "consistent-this": ["warn", "self"],
     // enforce newline at the end of file, with no multiple empty lines
-    "eol-last": "off",
+    "eol-last": "warn",
     // require function expressions to have a name
     "func-names": "off",
     // enforces use of function declarations or expressions
