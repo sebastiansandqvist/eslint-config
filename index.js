@@ -326,7 +326,7 @@ module.exports = {
     // disallow to use this/super before super() calling in constructors.
     "no-this-before-super": "error",
     // require let or const instead of var
-    "no-var": "warn", // trying this out... might not keep
+    "no-var": "off",
     // require method and property shorthand syntax for object literals
     "object-shorthand": "off",
     // suggest using of const declaration for variables that are never modified after declared
