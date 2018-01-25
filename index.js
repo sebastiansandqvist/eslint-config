@@ -4,7 +4,7 @@ module.exports = {
     "node": true,
     "es6": true
   },
-  "parserOptions":  {
+  "parserOptions": {
     ecmaVersion: 2017,
     sourceType: "module"
   },
@@ -178,10 +178,10 @@ module.exports = {
     // require or disallow Yoda conditions
     "yoda": ["warn", "never"],
 
-      // -------------------------- NODE --------------------------
+    // -------------------------- NODE --------------------------
 
-      // enforce return after a callback
-      "callback-return": "off",
+    // enforce return after a callback
+    "callback-return": "off",
     // enforces error handling in callbacks (node environment)
     "handle-callback-err": "warn",
     // disallow mixing regular variable and require declarations
@@ -197,13 +197,13 @@ module.exports = {
     // disallow use of synchronous methods (off by default)
     "no-sync": "off",
 
-      // -------------------------- STRICT --------------------------
+    // -------------------------- STRICT --------------------------
 
     "strict": ["warn", "never"],
 
-      // -------------------------- STYLISTIC ISSUES --------------------------
+    // -------------------------- STYLISTIC ISSUES --------------------------
 
-      // enforce spacing inside array brackets
+    // enforce spacing inside array brackets
     "array-bracket-spacing": "off",
     // enforce brace style
     "brace-style": ["warn", "stroustrup", {"allowSingleLine": true}],
@@ -295,7 +295,11 @@ module.exports = {
     // require or disallow space before blocks
     "space-before-blocks": ["warn", "always"],
     // require or disallow space before function opening parenthesis
-    "space-before-function-paren": ["warn", "never"],
+    "space-before-function-paren": ["warn", {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
     // require or disallow spaces inside parentheses
     "space-in-parens": ["warn", "never"],
     // require spaces around operators
