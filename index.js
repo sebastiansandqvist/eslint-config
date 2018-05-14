@@ -229,7 +229,7 @@ module.exports = {
     // "indent": [2, "tab"],
     "indent": ["error", 2, { "SwitchCase": 1 }],
     // enforces spacing between keys and values in object literal properties
-    "key-spacing": ["warn", { "beforeColon": false, "afterColon": true }],
+    "key-spacing": ["warn", { "beforeColon": false, "afterColon": true, "mode": "minimum" }],
     // enforces empty lines around comments
     "lines-around-comment": "off",
     // disallow mixed "LF" and "CRLF" as linebreaks
